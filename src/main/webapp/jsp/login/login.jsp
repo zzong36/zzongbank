@@ -67,7 +67,7 @@
 								</div>
 								<div class="form-group mb-3">
 									<label for="password">비밀번호</label> 
-									<input type="text" class="form-control" name="password">
+									<input type="password" class="form-control" name="password">
 								</div>
 								<div class="d-grid gap-2">
 									<input type="submit" value="로그인" class="btn btn-success mt-2">

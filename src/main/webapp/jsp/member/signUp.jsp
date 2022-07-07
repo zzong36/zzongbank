@@ -48,73 +48,57 @@
 		<jsp:include page="/jsp/include/topMenu.jsp" />
 	</header>
 	
-	<!-- page header -->
-	<header id="page-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 m-auto text-center py-5">
-					<h1>회원가입</h1>
-				</div>
-			</div>
-		</div>
-	</header>
-	
-	
-	<div id="container">
-		<div class="form-wrap">
-			<h1>회원가입</h1>
-			<form action="register.jsp" method="post" name="writeForm"
-				onsubmit="return checkForm()">
-				<div class="form-group">
-					<label for="id">아이디</label> <input type="text" name="id" id="id"
-						placeholder="아이디 입력">
-				</div>
+	<!-- 회원가입 -->
+    <section id="register">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4>회원가입</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="register.jsp" method="post" name="writeForm" onsubmit="return checkForm()">
+                                <div class="form-group mb-2">
+                                    <label for="id">아이디</label>
+                                    <input type="text" class="form-control" name="id" id="id" placeholder="아이디 입력">
+                                </div>
 
-				<div class="form-group">
-					<label for="password">비밀번호</label> <input type="password"
-						name="password" id="password" placeholder="영문, 숫자 포함 8자리">
-				</div>
+                                <div class="form-group mb-3">
+                                    <label for="password">비밀번호</label>
+                                    <input type="password" class="form-control" name="password" id="password">
+                                </div>
 
-				<div class="form-group">
-					<label for="first-name">성명</label> <input type="text" name="name"
-						id="name" placeholder="성명 입력">
-				</div>
+                                <div class="form-group mb-3">
+                                    <label for="first-name">성명</label>
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="성명 입력">
+                                </div>
+                                
+                                <div class="form-group mb-3">
+                                    <label for="email">이메일</label>
+                                    <input type="email" class="form-control" name="email_id" id="email" placeholder="hello@naver.com">
+                                </div>
+                                
+                                <div class="form-group mb-3">
+                                    <label for="post">우편번호</label>
+                                    <input type="text" class="form-control" name="post" id="post" placeholder="00-000">
+                                </div>
+                               
+                                <div class="form-group mb-3">
+                                    <label for="basicAddr">주소</label>
+                                    <input type="text" class="form-control" name="basic_Addr" id="post">
+                                </div>
 
-				<div class="form-group">
-					<label for="tel1">전화번호</label> <input type="text" name="tel1"
-						id="tel1" placeholder="010-0000-0000">
-				</div>
-
-				<div class="form-group">
-					<label for="email">이메일</label> <input type="email" name="email_id"
-						id="email" placeholder="hello@naver.com">
-				</div>
-
-				<div class="form-group">
-					<label for="post">우편번호</label> <input type="text" name="post"
-						id="post" placeholder="00000">
-				</div>
-
-				<div class="form-group">
-					<label for="basicAddr">주소</label> <input type="text"
-						name="basic_addr" id="basic_Addr" placeholder="서울특별시 중구 ">
-				</div>
-
-				<button type="submit" class="btn">가입하기</button>
-
-				<p class="bottom-text">
-					회원가입 시 <a href="#">이용약관</a>과 <a href="#">개인정보처리방침</a>에 동의
-				</p>
-
-
-			</form>
-		</div>
-		<footer>
-			<p>
-				이미 회원가입 했다면? <a href="#">로그인 하기</a>
-			</p>
-		</footer>
-	</div>
+                                <div class="d-grid gap-2">
+                                    <input type="submit" value="가입하기" class="btn btn-success mt-2">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	
 	<footer>
 		<!-- 경로가 Mission_Web 이후부터 시작(xml, include, forward)의 경우 나머지는 localhost:9999/이후부터 시작하므로 절대경로는 /Mission_Web부터 시작  -->
